@@ -58,11 +58,6 @@ class TabMaster(QMainWindow):
             }
         """)
 
-        def show_tab(self, tab_number):
-            self.centralWidget().layout().itemAt(0).widget().setText(
-                f"Wybrano zakładkę P{tab_number}"
-            )
-
     def show_tab(self, tab_number):
         self.content_label.setText(f"Aktualnie wybrano zakładkę P{tab_number}")
 
